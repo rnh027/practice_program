@@ -1,0 +1,17 @@
+int ans=input1;
+        int count = 0;
+        if(input2==2)
+        {
+            input1-=1;
+            ans +=(input1);
+        }
+        while(input1>1)
+        {
+            input1-=1;
+            if(count%2==0)
+            ans -= (input1);
+            else
+            ans += (input1);
+            count += 1;
+        }
+        return ans;
