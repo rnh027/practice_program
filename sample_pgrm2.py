@@ -1,1 +1,2 @@
-print("Hi there, Thanks for wonderful class")
+x = "hai"
+print(x[1])
