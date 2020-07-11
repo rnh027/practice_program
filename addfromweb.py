@@ -11,6 +11,7 @@ ctx.verify_mode = ssl.CERT_NONE
 url = input("Enter -")
 html = urlopen(url, context=ctx).read()
 soup = BeautifulSoup(html,"html.parser")
-data = soup.findAll("span", { "class":"comments" })
+#data = soup.findAll("span", { "class":"comments" })
+data = soup("span")
 numbers = list(map(int,[d.text for d in data]))
 print(sum(numbers))
